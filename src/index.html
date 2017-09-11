@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="textml; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection">
+		<title></title>
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<script src="js/rem.js"></script>
+		<link rel="stylesheet" href="css/reset.css">
+		<!--<link rel="stylesheet" href="css/common.css" />-->
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"  			
+			});
+		</script>
+	</head>
+
+	<body class=" clear">
+		<div id="print" class="clear">
+			<iframe src="html/music.html" width="0" height="0" id="iframe"></iframe>
+			<!--<source src="image/sing.mp3" type="audio/ogg">-->
+			<!--<source  type="audio/ogg">-->
+			<div class="clear top">
+				<div class="clear top_left">
+					<div class="goback" id="goback" onclick="yun()">
+						<img src="image/back.png" />
+					</div>
+					<div class="recharge clear">
+						<span class="count">0</span>
+						<!--充值输入框-->
+						<span class="chong">
+					  <a href=""></a><!--充值按钮-->
+				  </span>
+					</div>
+				</div>
+				<div class="index_right clear">
+					<span class="music">
+					<!--<img src="image/voice.png" alt="" class="img">-->
+			</span>
+				<!--<span class="notice">
+				<a href=""  data-transition="slide">
+					<img src="image/notice.png" alt="" class="img">
+				</a>
+			</span>-->
+				</div>
+			</div>
+			<div class="bottom clear">
+				<div class="in_left">
+					<div class="clear left_top">
+						<span class="qq">
+						<img src="image/talk.png" alt="">
+					</span>
+						<span class="k">
+						<img src="image/k.png" alt="" class="king">
+					</span>
+					</div>
+					<div class="left_center clear">
+						<div class="center_left ">
+							<div class="name clear">
+								<div class="headImg">
+									<img src="image/notice.png" alt="">
+								</div>
+								<div class="nickName">kkkk</div>
+							</div>
+							<div class="result">
+								<div class="winBox clear">
+									<span class="img2">
+								<img src="image/ic_kline_src_win.png" alt="">
+							</span>
+									<span class="red">胜：</span>
+									<span class="winCount red">5</span>
+								</div>
+								<div class="loseBox clear">
+									<span class="img2">
+									<img src="image/lose.png" alt="">
+								</span>
+									<span class="green">负：</span>
+									<span class="loseCount green">0</span>
+								</div>
+
+							</div>
+							<div class="history">
+								<img src="image/history.png" alt="" class="historyImg">
+							</div>
+
+						</div>
+
+						<div class="center_right">
+							<div class="win">
+								<img src="" alt="" class="winImg">
+							</div>
+							<div class="winName">菜鸟</div>
+							<div class="ranking">
+								<span>总排名：</span>
+								<span class="rankCount">123456</span>
+							</div>
+							<div class="progress_box clear">
+								<img src="image/kline.png" class="kline">
+								<div class="progress">
+									<div class="div1"></div>
+									<div class="integral_box">
+										<span class="integral">0</span>/<span class="needIntegral">40</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left_bottom clear">
+						<!--<span class="dekaron">
+						<img src="image/dekaron.png" alt="">
+					</span>-->
+						<span class="practice">
+						<img src="image/practice.png" alt="">
+
+					</span>
+					</div>
+				</div>
+				<div class="in_right">
+					<div class="ranked">
+						<img src="image/ranked.png" alt="" class="img1">
+					</div>
+					<div class="gold">
+						<img src="image/gold.png" alt="" class="img1 goldImg">
+						<img src="image/look.png" alt="" class="look">
+					</div>
+				</div>
+			</div>
+			<!--弹出层-->
+			<div class="mask opacity"></div>
+
+			<div class="popup">
+				<div class="close">
+					<img src="image/close.png" alt="">
+				</div>
+				<div class="box">
+					
+					<!--开始练习-->
+					<div class="pra">
+						<p>练习赛是你一个人练习提升K线水平的赛事，练习好就去挑战朋友吧！</p>
+						<p>分析K线即时买卖，你可以做多、做空，比赛大约3分钟。</p>
+						<p>你即将操作的是某支真实股票的某段历史记录</p>
+					</div>
+					<!--金豆赛没有豆-->
+					<div class="beanBox">
+						<!--没有豆-->
+						<div class="beanImg">
+							<img src="image/logo_0_gray.png" />
+						</div>						
+						<div class="bean">
+							50豆/场
+						</div>
+						<div class="beanWard">
+							<img src="image/bean_tips.png" />
+						</div>												
+					</div>
+					<!--金豆赛有豆-->					
+					<div class="beanBoxgold">
+						
+						<!--有豆-->
+						
+						<div class="goldbean">
+							<img src="image/ic_kline_bean_logo_0.png" />
+						</div>
+						<div class="beangold">
+							50豆/场
+						</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+
+				<div class="pri_box">
+					<img src="image/ic_kline_bg_begin_exercise.png" alt="">
+				</div>
+
+			</div>
+
+			<div class="maskIndex opacityIndex"></div>
+			<div class="popupIndex">
+				<div class="close">
+					<img src="image/close.png" alt="">
+				</div>
+				<div class="box">
+					<!--比赛时间-->
+					<div class="content">
+						<div class="title">
+							[k线之王]第<span id="jie"></span>届
+						</div>
+						<div class="time">
+							<p>
+								[比赛时间]
+							</p>
+							<p id="time"><span id='t'></span>—<span id="h"></span></p>
+							<p>
+								[比赛规则]
+							</p>
+							<p>1.玩家皆随机1V1配对</p>
+							<p>2.每场赛时3分钟，随机抽选A股中任一股票60根K线</p>
+							<p>3.比赛获胜1场，胜场数+1；输掉比赛，若当前“0-9胜场数”则胜场数-1，“10-19胜场数”则胜场数-2，“20-29胜场数”则胜场数-3；</p>
+							<p>4.收益率高者胜数。</p>
+							<p>[奖项]</p>
+							<p>第1名：2000淘金豆</p>
+							<p>第2名：1500淘金豆</p>
+							<p>第3名：1000淘金豆</p>
+							<p>第4-10名：500淘金豆</p>
+							<p>第11-100名：200淘金豆</p>
+							<p>第101-200名：100淘金豆</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+	<script src="js/touch.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		//console.log($(window).width());
+		//console.log($(window).height())
+	</script>
+
+</html>

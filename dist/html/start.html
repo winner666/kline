@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="textml; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection">
+		<title></title>
+		<script src="../js/jquery-2.2.3.min.js"></script>
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/index.css" />-->
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/history.css" />
+		<link rel="stylesheet" type="text/css" href="../css/start.css" />
+		<style>
+			.jie {
+				font-size: 0.32rem;
+			}
+			
+			.loaddiv {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -0.54rem;
+			}
+			
+			.loaddiv img {
+				width: 1.08rem;
+				height: 1.08rem;
+			}
+			.load {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -0.54rem;
+			}
+			
+			.load img {
+				width: 1.08rem;
+				height: 1.08rem;
+			}
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function(){
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"  			
+			});
+		</script>
+	</head>
+	<body>
+		<div id="print">
+			<iframe src="music.html" width="0" height="0" id="iframe"></iframe>
+			<div class="back"><img src="../image/back.png" /></div>
+			<div class="ranking fl">
+				<div class="activity">
+					<span class="act1">活动日期：</span>
+					<span class="jie"></span>
+					<span class="act2">每天比赛时间段：00点-24点</span>
+				</div>
+				<div id="wrapper" class="sank-list" style="position: relative;">
+					<ul class="warp">
+						<div class="loaddiv">
+							<img src="../image/load.gif" />
+						</div>
+						<!--	<li class="sank1">
+							<span class="number fl">446</span>
+							<span class="portrait fl"><img src="../image/ic_king_random_head_10.jpg"/></span>
+							<span class="sank-name fl">虹羽</span>
+							<span class="ic fl"><img src="../image/ic_kline_flag_level_3.png"/></span>
+							<span class="playback fr">
+								<img src="../image/ic_btn_playback.png"/>
+							</span>														
+							<span class="numb fr">2场</span>
+						</li>-->
+
+					</ul>
+				</div>
+			</div>
+			<div class="honor fr">
+				<div class="myhonor"><img src="../image/ic_kline_bg_myhonor.png" /></div>
+				<div class="content" style="position: relative;">
+					<div class="load">
+						<img src="../image/load.gif" />
+					</div>
+				</div>
+				<div class="start">
+					<img src="../image/ic_kline_btn_start_game.png"  class="startImg" />
+				</div>
+			</div>
+		</div>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/start.js"></script>
+	</body>
+
+</html>

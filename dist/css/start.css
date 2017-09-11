@@ -1,0 +1,129 @@
+#print{
+	background: url(../image/ic_kline_common_mbg.png);
+	background-size: 100% 100%;
+}
+
+.ranking{	
+	background: url(../image/bg-sanking.png);
+	background-size: 100% 100%;
+	margin-left: 0.1rem;
+	width: 55%;
+	height: 6.5rem;	
+	/*position: relative;*/
+}
+.activity{
+	margin: 1.5rem 0 0 0.6rem;
+	height: auto;	
+}
+.activity span{
+	text-align: center;
+	font-size: 0.3rem;
+	display: inline-block;
+	margin: 0 auto;
+	color: #7a5b0b;
+}
+.sank1{
+	background: linear-gradient(#e4c38d,#dbae6d);
+	border-radius: 10% 10% 0.15rem 0.15rem ;
+	width: 90%;
+	height: 0.8rem;
+	margin: 0.28rem;
+	color: #755a25;
+}
+.sank1 span{
+	display: block;
+	/*margin-top: 0.18rem;*/
+}
+.number{
+	margin: 0.25rem 0.1rem;
+}
+.portrait{
+	width: 0.65rem;
+	height: 0.65rem;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	margin: 0.08rem 0.1rem;
+}
+.portrait img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.sank-name{
+	margin-top: 0.18rem;
+}
+.playback{
+	margin: 0.18rem;
+}
+.playback img{
+	width: 1.13rem;
+	height: 0.5rem;
+}
+.ic{
+	/*border: 1px solid #ccc;*/
+	width: 0.8rem;
+	height: 0.5rem;
+	margin-left: 0.1rem;
+	margin-top: 0.18rem;
+}
+.ic img{
+	width: 100%;
+	height: 100%;
+}
+.numb{
+	margin-top: 0.18rem;
+}
+.honor{	
+	margin: 0.1rem 0.28rem 0 0;
+	width: 36%;
+	height: 6.5rem;
+}
+.honor .myhonor{
+	width: 2.94rem;
+	height: 0.68rem;
+	margin: 0 auto;
+}
+.myhonor img{
+	width: 2.94rem;
+	height: 0.68rem;
+}
+.content{
+	width: 90%;
+	height: 65%;
+	background: rgba(0,0,0,0.1);
+	margin: 0.1rem auto;
+	overflow: hidden;
+}
+.hon-num{
+	display: block;
+	margin: 0.15rem 0.4rem;
+	color: #74470e;
+}
+.start{
+	width: 3rem;
+	height: 1rem;
+	margin: 0 auto;
+}
+.start img{
+	width: 3rem;
+	height: 1rem;
+}
+#wrapper{
+	height: 3.5rem;
+	overflow-y: scroll;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+.header .text{
+	width: 1.48rem;
+	height: 0.7rem;
+}
+.list-l1{
+	background: linear-gradient(#f4d9ad,#d6a968);
+	border-radius: 10% 10% 0.15rem 0.15rem ;
+	width: 85%;
+}
+.list-l1 .letter{
+	margin: 0.36rem 0.65rem;
+	width: 0.36rem;
+	height: 0.27rem;
+}
+.title{
+	margin: 0.38rem 0;
+	font-size: 0.4rem;
+	color: #8f4808;
+}
+.time{
+	margin:0.2rem 0.2rem;
+	color: #8f4808;
+	font-size: 0.28rem;
+}

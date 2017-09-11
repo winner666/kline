@@ -1,0 +1,250 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+#print{
+	width: 100%;
+  		height: 100%;
+  		width:100%;height:100%;display:-webkit-box;
+		-webkit-box-orient:vertical;
+       
+    }
+/*头部*/
+.head{
+	/*padding:0.14rem 0.2rem 0.14rem 0.4rem;*/
+	height: 1rem;
+	width: 100%;
+	background:#292827 ;
+	
+}
+.headLeft{
+	float: left;
+}
+.headImg{
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	overflow: hidden;
+	border:2px solid #010000 ;	
+	float: left;
+	margin:0.1rem 0.2rem 0 ;
+}
+.infor{
+	float: left;
+	color: #fff;
+		
+}
+.nickName{
+	font-size:0.16rem;
+	line-height: 0.5rem;
+}
+.percent{
+	font-size:0.3rem;
+	font-weight: 600;
+	line-height: 0.5rem;
+}
+.headImg img{
+	width: 100%;
+	height: 100%;
+}
+.win{
+	float: left;
+	margin: 0.2rem 0.2rem 0;
+	
+}
+.win img{
+	width: 1.04rem;
+	height: 0.6rem;
+	
+}
+.word{
+	float: left;
+	background: #989898;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	font-size: 0.30rem;
+	line-height: 0.5rem;
+	margin-top:0.25rem;
+	padding:0 0.3rem;
+}
+.headRight{
+	float: right;
+}
+.headRight img{
+	width: 100%;
+	height: 100%;
+}
+.equal{
+	float: left;
+	
+}
+.equal img{
+	width: 1.04rem;
+	height: 0.6rem;
+	margin-top: 0.2rem;
+}
+/*中间*/
+.center{
+	background: #000000;
+	width: 100%;
+	-webkit-box-flex:1;overflow:hidden;
+	height: 2rem;
+	
+}
+/*底部*/
+/*底部*/
+.foot{
+	/*padding:0.14rem 0.2rem;*/
+	height: 1rem;
+	width: 100%;
+	padding:0.1rem 0;
+	background:#292827 ;
+}
+.footLeft{
+	float: left;
+}
+.footRight{
+	float: right;
+}
+.speed{
+	float: left;
+	width: 1.78rem;
+	height:0.73rem;
+	margin-left: 0.2rem;
+}
+.warend{
+	width: 2.62rem;
+	height: 0.83rem;
+	margin-right: 0.2rem;
+}
+/*弹框*/
+.box{
+	margin:1rem 0.3rem 0 0.3rem;
+	display: block;
+}
+/*开始回放*/
+.replay{
+	position: absolute;
+	left: 50%;
+	bottom: -0.5rem;
+	margin-left: -2.07rem;
+	display:block;
+}
+.replay img{
+	width: 4.15rem;
+	height: 1.36rem;
+}
+.left{
+	float: left;
+}
+.people{
+	border-radius:50% ;
+	-moz-border-radius: 50%;
+	-webkit-border-radius:50% ;
+	overflow: hidden;
+	width: 1rem;
+	height:1rem;
+	margin:0 auto;
+}
+.people img{
+	width: 100%;
+	height: 100%;
+	
+	
+}
+.nick{
+	text-align: center;
+}
+.vs{
+	width: 1.58rem;
+	height:0.96rem;
+}
+.man{
+	width: 33%;
+}
+.woman{
+	width: 33%;
+	float: right;
+}
+.winner{
+	width: 33%;
+}
+.winner img{
+	margin: 0 auto;
+}
+/*结束回放*/
+.friend{
+	position: absolute;
+	left: 1.2rem;
+	bottom: -0.3rem;
+	display: block;
+}
+.friend img{
+	
+	width: 1.01rem;
+	height:1.04rem;
+}
+.circle{
+	display: block;
+	position: absolute;
+	right: 1.2rem;
+	bottom: -0.3rem;
+}
+.circle img{
+	width: 1.01rem;
+	height: 1.04rem;
+}
+.startword{
+	text-align: center;
+	float: left;
+	font-size: 0.18rem;
+	margin-top:0.2rem ;
+	align-items: center;
+}
+
+.enjoy{
+	display: none;
+}
+
+
+.moreBox{
+	width: 33%;
+	float: left;
+}
+.more{
+	width:2.59rem;
+	height: 0.8rem;
+	margin:0.1rem 0.2rem;
+}
+.going{
+
+	width:33%;
+}
+.kongBox{
+	width: 33%;
+	float: right;
+}
+.kong{
+	float: right;
+	width: 2.62rem;
+	height:0.8rem;
+	margin:0.1rem 0.2rem;
+}
+.closeBack{
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top:0.4rem;
+}
+.closeBack img{
+    width:0.96rem;
+    height:0.98rem;
+}
+.enjoyBox{
+	margin:1rem 0.3rem 0 0.3rem;
+	display: none;
+}

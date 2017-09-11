@@ -1,0 +1,447 @@
+
+
+body{
+	
+     z-index: 100;
+}
+ #print{
+ 	position : absolute ;
+ 	 width : 100% ;
+     height : 100% ;
+ 	 /*background:url(../image/bg.png) no-repeat 0 0;*/
+ 	background: url(http://ojantumyo.bkt.clouddn.com/o_1bmm0k7rd1o8ed801nih56mrja7.png) no-repeat 0 0;
+     background-size: 100% 100%; 
+ }
+
+.top{
+    margin-top:0.1rem;
+}
+.top_left{
+    float:left;
+}
+.index_right{
+    float: right;
+
+}
+/*充值*/
+.goback{
+   float:left;
+    margin: 0.03rem 0 0 0.1rem;
+}
+.goback img{
+    display: block;
+    width:0.69rem;
+    height:0.7rem;
+}
+.recharge{
+    float:left;
+    margin: 0.03rem 0 0 0.1rem;
+    display: inline-block;
+    width:2.85rem;
+    height:0.64rem;
+    background:url("../image/recharge.png") no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+.count{
+   float:left;
+    margin-left:1.4rem;
+    color:#fff;
+    font-size:0.28rem;
+    line-height: 0.64rem;
+}
+.chong{
+    width:0.4rem;
+    height:0.4rem;
+    float:right;
+    margin-top:0.08rem;
+
+}
+/*音乐*/
+.music{
+float:left;
+    width: 0.69rem;
+    height: 0.7rem;
+    margin: 0.03rem 0.2rem 0 0;
+    background: url("../image/voice.png") no-repeat 0 0;
+    background-size:100% 100%;
+}
+
+
+.notice{
+    float:right;
+    width: 0.69rem;
+    height: 0.7rem;
+    margin: 0.03rem 0.1rem 0 0;
+
+}
+.img{
+    width: 0.69rem;
+    height: 0.7rem;
+}
+/*内容*/
+.in_left{
+    float: left;
+    margin:0.5rem 0 0 0.34rem;
+
+}
+.in_right{
+    float: right;
+    margin:0.5rem 0.7rem 0 0 ;
+}
+
+.qq{
+    float:left;
+    width:2.27rem;
+    height: 0.74rem;
+}
+.qq img{
+    width:2.27rem;
+    height: 0.74rem;
+}
+.k{
+    float: left;
+    width:2.82rem;
+    height: 0.74rem;
+
+    margin-left:0.3rem;
+}
+.k img{
+    width:2.82rem;
+    height: 0.74rem;
+}
+.left_center{
+    background: url("../image/border.png") no-repeat 0 0;
+    background-size:100% 100%;
+    margin-top:0.1rem;
+   padding:0.4rem 0.3rem 0.4rem 0.5rem;
+}
+.center_left{
+    float:left;
+}
+.center_right{
+    float:right;
+}
+.headImg{
+    width:0.6rem;
+    height:0.6rem;
+    overflow: hidden;
+    float:left;
+    border:1px solid #b7a672;
+}
+.headImg img{
+     display:block;
+     width:100%;
+     height:100%;
+ }
+.name{
+    width:100%;
+}
+.nickName{
+    line-height:0.6rem;
+    float:right;
+    margin-left:0.1rem;
+    color:#442e00;
+    font-size:0.26rem;
+}
+.img2{
+    float:left;
+}
+.img2 img{
+
+    width:0.9rem;
+    height:0.36rem;
+}
+.winBox{
+    margin:0.2rem 0;
+}
+.red{
+    font-weight:600;
+    color:red;
+    float:left;
+    line-height: 0.36rem;
+    font-size:0.24rem;
+    margin-left:0.1rem;
+}
+.green{
+    font-weight:600;
+    color:green;
+    float: left;
+    line-height: 0.36rem;
+    font-size:0.24rem;
+    margin-left:0.1rem;
+}
+.history img{
+    width:1.65rem;
+    height:0.48rem;
+    margin-top: 0.2rem;
+}
+.left_bottom{
+    margin-top:0.1rem;
+}
+.dekaron{
+    margin-left:0.1rem;
+    float: left;
+    margin-left:0.5rem;
+}
+.dekaron img{
+    width: 1.92rem;
+    height: 0.56rem;
+}
+.practice{
+    margin-right:0.1rem;
+    float: right;
+    margin-right:0.5rem;
+
+}
+.practice img{
+    width: 1.98rem;
+    height: 0.56rem;
+}
+/*左边中间*/
+.winName{
+    font-weight: 600;
+    text-align: center;
+    color:#442e00;
+    font-size:0.26rem;
+}
+/*右边*/
+.in_right{
+
+}
+.win img{
+   margin:0 auto;
+    width:1.04rem;
+    height:0.64rem;
+}
+.ranking{
+    font-weight: 600;
+    text-align: center;
+    font-size:0.26rem;
+    color:#442e00;
+    margin-top:0.2rem;
+}
+.ranked img{
+    display: block;
+    width: 4.07rem;
+    height:2.18rem;
+}
+.gold{
+    position: relative;
+}
+.gold img{
+    display: block;
+   width: 4.16rem;
+    height:2.12rem;
+}
+.gold .look{
+    position:absolute;
+    top:0;
+    left:0;
+    width:1.86rem;
+    height:0.54rem;
+}
+.progress{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #442E00;
+	width: 1.2rem;
+	height: 0.25rem;
+	float: right;
+	margin-top: 0.4rem;
+	margin-left: 0.1rem;
+	position: relative;
+}
+.kline{
+	margin-top: 0.3rem;
+	float: left;
+	width: 0.24rem;
+	height: 0.4rem;
+}
+.integral_box{
+	position: absolute;
+	left:20% ;
+	top: 0;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	color: #fff;
+	font-size: 0.16rem;	
+	
+}
+.div1{
+	background: #FF0000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	height: 100%;
+	
+}
+/*遮罩层*/
+
+.mask{height:100%; width:100%; position:fixed; _position:absolute; top:0; z-index:1000; display: none}
+
+.opacity{ opacity:0.3; filter: alpha(opacity=30); background-color:#000;}
+.popup{
+    position: absolute;
+    width:7rem;
+    height:5rem;
+    background: url("../image/popup.png") no-repeat 0 0;
+    background-size:100% 100%;
+    z-index:1001;
+    top:56%;
+    left:20%;
+    padding:0.2rem;
+    margin:-3.35rem 0 -2.25rem 0;
+    display: none;
+}
+.close{
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top:0.4rem;
+}
+.close img{
+    width:0.96rem;
+    height:0.98rem;
+}
+.pri_box{
+    position:absolute;
+    bottom:-0.6rem;
+    left:50%;
+    margin-left:-2.075rem;
+    z-index: 1003;
+     display: none;
+}
+.pri_box img{
+    width:4.15rem;
+    height:1.36rem;
+   
+
+}
+
+.content{
+    margin-top:1rem;
+    overflow: auto;
+    font-size:0.28rem;
+    padding:0.2rem;
+    line-height:0.4rem;
+    display: block;
+   
+}
+.time{
+	 overflow-y: scroll;
+	font-size:0.28rem;
+	height: 2.5rem;
+	overflow: auto;
+	
+}
+.title{
+	text-align: center;
+	font-weight: 600;
+	font-size: 0.34rem;
+}
+/*开始练习*/
+.pra{
+	margin-top:1.4rem;
+    overflow: auto;
+    font-size:0.28rem;
+    padding:0.2rem;
+    line-height:0.4rem;
+    display: none;
+ 
+}
+.pra p:nth-child(2){
+	margin:0.2rem 0;
+}
+
+/*金豆赛*/
+.beanBox{
+	display: none;
+	background: url(../image/frame_gray.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	width: 2.79rem;
+	height: 2.84rem;
+	margin: 1.5rem auto;
+	position: relative;
+	z-index: 23;
+	
+}
+.beanBoxgold{
+	display: none;
+	background: url(../image/bean_frame.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	width: 2.79rem;
+	height: 2.84rem;
+	margin: 1.5rem auto;
+	position: relative;
+	z-index: 23;
+}
+.beanImg{
+	
+padding-top: 0.5rem;
+}
+.beanImg img{
+	margin:0 auto;
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+/*有豆*/
+.goldbean{
+	padding-top: 0.5rem;
+}
+.goldbean img{
+	margin:0 auto;
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+
+
+.bean{
+	font-size: 0.16rem;
+	text-align: center;
+	
+}
+.beangold{
+	font-size: 0.16rem;
+	text-align: center;
+}
+.beanWard{
+	position: absolute;
+	top:-0.1rem;
+	left: 50%;
+	margin-left: -0.99rem;
+}
+.beanWard img{
+	width: 1.88rem;
+	height: 0.3rem;
+	
+}
+
+
+.musicClose{
+    background: url("../image/closeVoice.png") no-repeat 0 0;
+    background-size:100% 100%;
+}
+
+
+.maskIndex{height:100%; width:100%; position:fixed; _position:absolute; top:0; z-index:1000; display: block}
+
+.opacityIndex{ opacity:0.3; filter: alpha(opacity=30); background-color:#000;}
+.popupIndex{
+    position: absolute;
+    width:7rem;
+    height:5rem;
+    background: url("../image/popup.png") no-repeat 0 0;
+    background-size:100% 100%;
+    z-index:1001;
+    top:56%;
+    left:20%;
+    padding:0.2rem;
+    margin:-3.35rem 0 -2.25rem 0;
+    display: block;
+}
+
+
+

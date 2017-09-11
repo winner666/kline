@@ -1,0 +1,261 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+#print{
+        
+    
+  		width: 100%;
+  		height: 100%;
+  		width:100%;height:100%;display:-webkit-box;
+		-webkit-box-orient:vertical;
+    }
+/*头部*/
+.head{
+	/*padding:0.14rem 0.2rem 0.14rem 0.4rem;*/
+	height: 1rem;
+	width: 100%;
+	background:#292827 ;
+	
+}
+
+.headLeft{
+	float: left;
+}
+.headImg{
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	overflow: hidden;
+	border:2px solid #010000 ;	
+	float: left;
+	margin:0.1rem 0.2rem 0 ;
+}
+.infor{
+	float: left;
+	color: #fff;
+
+}
+.nickName{
+	font-size:0.16rem;
+	line-height: 0.5rem;
+}
+.percent{
+	font-size:0.3rem;
+	font-weight: 600;
+	line-height: 0.5rem;
+}
+.headImg img{
+	width: 100%;
+	height: 100%;
+}
+.win{
+	float: left;
+	margin: 0.2rem 0.2rem 0;
+	
+}
+.win img{
+	width: 1.04rem;
+	height: 0.6rem;
+	
+}
+.word{
+	float: left;
+	background: #989898;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	font-size: 0.30rem;
+	line-height: 0.5rem;
+	margin-top:0.25rem;
+	padding:0 0.3rem;
+}
+.headRight{
+	float: right;
+	margin:0.15rem 0.2rem;
+}
+.headRight img{
+	width: 2.06rem;
+	height: 0.7rem;
+}
+/*中间*/
+.center{
+	background: #000000;
+	width: 100%;
+	-webkit-box-flex:1;overflow:hidden;
+	height: 2rem;
+	
+}
+/*底部*/
+.foot{
+	/*padding:0.14rem 0.2rem;*/
+	 display: -webkit-flex; /* Safari */
+  		display: flex;
+  		flex-direction:row;
+	height: 1rem;
+	width: 100%;
+	padding:0.1rem 0;
+	background:#292827 ;
+	
+}
+
+.moreBox{
+	flex: 3;
+	-webkit-box-flex:1;
+	
+}
+.width{
+
+}
+.more{
+	width:2.59rem;
+	height: 0.8rem;
+	margin:0.1rem 0.2rem;
+}
+.going{
+	
+   flex: 3;
+   -webkit-box-flex:1;
+}
+.kongBox{
+	flex: 3;
+	-webkit-box-flex:1;
+	
+}
+.kong{
+    float: right;
+    width: 2.62rem;
+    height:0.8rem;
+    margin:0.1rem 0.2rem;
+}
+.leftSpeed{
+	width: 1.06rem;
+	height: 0.7rem;
+	float: right;
+}
+.go{
+	
+	width: 0.67rem;
+	height: 0.69rem;
+	margin: 0 auto;
+}
+.going span{
+	width:50%;
+	float: left;
+}
+.rightSpeed{
+	float: left;
+	width: 1.06rem;
+	height: 0.7rem;
+}
+.kxian{
+	color: #fff;
+	width: 100%;
+	font-size:0.16rem;
+	text-align: center;
+}
+#center{
+	margin:0 auto;
+}
+/*弹出层*/
+.friend{
+	position: absolute;
+	left: 1.2rem;
+	bottom: -0.3rem;
+	display: none;
+}
+.friend img{
+	
+	width: 1.01rem;
+	height:1.04rem;
+}
+.circle{
+	display: none;
+	position: absolute;
+	right: 1.2rem;
+	bottom: -0.3rem;
+}
+.circle img{
+	width: 1.01rem;
+	height: 1.04rem;
+}
+.head_img{
+	float: left;
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	overflow: hidden;
+}
+.head_img img{
+	width: 100%;
+	height: 100%;
+}
+.profit{
+	float: left;
+	margin-left: 0.3rem;
+}
+.contentTop{
+	margin-top:1rem;
+}
+.content{
+	display: none;
+	padding:0 0.3rem;
+}
+.title{
+	font-size: 0.3rem;
+}
+.count{
+	font-size:0.34rem;
+	color: green;
+	text-align: center;
+}
+.shares{
+	margin-top: 0.3rem;
+	font-size: 0.28rem;
+}
+/*开始比赛*/
+.start{
+	position: absolute;
+	bottom: -0.4rem;
+	left: 50%;
+	margin-left: -1.57rem;
+	
+}
+.start img{
+	width: 3.15rem;
+	height:0.9rem ;
+}
+.box{
+	margin:1.3rem 0.3rem 0.3rem;
+}
+/*.tip{
+	float: left;
+	
+}
+.tip img{
+	width: 0.44rem;
+	height: 0.45rem;
+}*/
+.startword{
+	float: right;
+	font-size: 0.26rem;
+	background: url(../image/tip.png) no-repeat 0 0;
+	background-size: 0.44rem 0.45rem;
+	padding-left:0.7rem;
+	line-height: 0.4rem;
+}
+.num{
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	left: 37%;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin:-1.25rem 0 -1.25rem 0;
+}

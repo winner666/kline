@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="textml; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection">
+		<title></title>
+		<script src="../js/jquery-2.2.3.min.js"></script>
+		<script src="../js/rem.js"></script>		
+		<!--<link rel="stylesheet" type="text/css" href="../css/notice.css"/>-->
+		<link rel="stylesheet" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/index.css" />-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/history.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/king.css"/>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"  			
+			});
+		</script>
+		<style>
+			.loaddiv{
+	position: absolute;
+	top:0;
+	left: 50%;
+	margin-left: -0.54rem;
+	margin-top: 1rem;	
+}
+.loaddiv img{width: 1.08rem;height: 1.08rem;}
+		</style>
+	</head>	
+	<body>
+		<div id="print">
+			<div class="header">
+				<span class="back fl">
+					<img src="../image/back.png"/>
+				</span>
+				<img class="text" src="../image/ic_kline_bg_king_board.png"/>
+			</div>
+			<div id="wrapper">  
+			    <div id="scroller" class="list">  
+			        <div id="pullDown">  
+			            <span class="pullDownLabel">下拉刷新</span>  
+			        </div>  
+			        <ul id="thelist" class="head-list" style="height: 100%;">  
+			            <!--<li>原始数据</li>--> 
+			            <div class="loaddiv">
+								<img src="../image/load.gif"/>
+							</div>
+			        </ul>  
+			        <div id="pullUp">  
+			            <span class="pullUpLabel">上拉加载更多</span>  
+			        </div>  
+			    </div>  
+			</div> 		
+			
+			
+			
+				<!--遮罩-->
+				<div class="mask opacity" style="display: none;"></div>
+				<!--弹框-->
+				<div class="popup" style="display: none;">					
+					<div class="close">
+						<img src="../image/close.png" alt="">
+					</div>
+					<!--弹框内容-->
+					<div class="box">
+						<div class="content">
+							
+							<!--<div class="con-left fl">
+								<span class="img fl"><img src="../image/ic_king_random_head_10.jpg"/></span>
+								<span class="write fl">天下第一</span>
+								<span class="win fl"><img src="../image/ic_circle_box_game_bg_win.png"/></span>
+								<span class="win-num fl">胜：6523</span>
+								<span class="lose fl"><img src="../image/ic_kline_src_lose.png"/></span>
+								<span class="lose-num fl">负：3301</span>
+								<span class="history fl"><img src="../image/history.png"/></span>
+							</div>
+							<div class="con-right fl">
+								<span class="icon fl"><img src="../image/ic_kline_flag_level_6.png"/></span>
+								<span class="grad fl">大将</span>
+								<span class="place">总排名：33344</span>
+							</div>-->
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+	
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/king.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

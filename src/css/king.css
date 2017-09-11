@@ -1,0 +1,158 @@
+.list-l1{
+	background: linear-gradient(#f4d9ad,#d6a968);
+	border-radius: 10% 10% 0.15rem 0.15rem ;
+	width: 95%;
+	height: 1.1rem;
+	margin: 0.2rem auto;
+}
+.list-l1 .write{
+	width: 15%;
+	/*margin: 0.2rem 0.1rem;*/
+}
+.place{
+	/*width: 6%;*/
+	margin: 0.4rem 0.2rem;
+}
+.img{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	margin: 0.15rem 0.2rem;
+}
+.img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.write{
+	margin: 0.3rem 0.1rem 0 0;
+}
+.icon{
+	width: 1.09rem;
+	height: 0.68rem;
+	margin: 0.2rem 0.3rem;
+}
+.icon img{
+	width: 100%;
+	height: 100%;
+}
+.grad{
+	margin: 0.3rem 0.2rem 0 0 ;
+}
+.total{
+	width: 1rem;
+	margin-top: 0.35rem;
+	margin-left: 0.5rem;
+}
+.win,.lose{
+	width: 0.9rem;
+	height: 0.36rem;
+	margin: 0.38rem 0.35rem 0 0.2rem;
+}
+.win img,.lose img{
+	width: 100%;
+	height: 100%;
+}
+.win-num,.lose-num{
+	width: 1rem;
+	color: red;
+	margin-top: 0.35rem;
+}
+.lose-num{
+	color: green;
+}
+.list{
+/*	height: 6.5rem;*/
+	overflow-y: scroll;
+}
+/*弹框样式*/
+.startgame{
+	width: 4.15rem;
+	height: 1.36rem;
+	position: absolute;
+	bottom: -0.68rem;
+	left: 50%;
+	margin-left: -2.075rem;
+}
+.startgame img{
+	width: 100%;
+	height: 100%;
+}
+/*弹框内容*/
+.con-left{
+	width: 50%;
+}
+.con-right{
+	width: 42%;
+	/*height: 100px;*/
+	/*border: solid 1px #000;*/
+	background: #fff6d7;
+	border-radius: 7px;
+}
+.con-left{
+	margin: 1.2rem 0 0 0.35rem;
+}
+.con-left .write{
+	margin:0.4rem 0;
+}
+.con-left .win,.con-left .lose{
+	/*display: inline-block;*/
+	margin: 0 0.15rem 0.2rem 0.15rem;
+}
+.con-left .win-num,.con-left .lose-num{
+	margin: 0 0.3rem 0.2rem 0;
+}
+.con-left .lose{
+	display: block;
+	
+}
+/*.con-left .lose-num{
+	margin: 0;
+}*/
+.con-left .history{
+	width: 1.65rem;
+	height: 0.48rem;
+	margin: 0 0.15rem 0.2rem 0.15rem;
+}
+.con-left .history img{
+	width: 100%;
+	height: 100%;
+}
+.con-right{
+	margin: 1.3rem 0 0 0;
+}
+.con-right .icon{
+	width: 2.18rem;
+	height: 1.36rem;
+	margin: 0.2rem 0.25rem;
+}
+.con-right .grad{
+	margin: 0 1rem;
+}
+.con-right .place{
+	display: inline-block;
+	margin: 0.1rem 0.5rem 0.15rem;
+	white-space: nowrap;
+}
+
+#wrapper {position:absolute;top:45px; bottom:48px;left:0;width:100%}  
+/*#scroller li {padding:0 10px;height:60px;line-height:60px;background:#ecf6ff;margin-top:10px}*/  
+#pullDown, #pullUp {padding:0 10px;height:30px;line-height:30px;color:#888;text-align:center}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,230 @@
+
+ #print{
+        position : absolute ;
+        display: -webkit-flex; /* Safari */
+  		display: flex;
+  		flex-direction:column;
+  		align-items:center; 
+  		 background: url(../image/background.png) no-repeat 0 0;
+  		 background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+     
+    }
+.head{
+	width: 100%;
+	background: #000000;
+	height: 1rem;
+	position: relative;
+	background: url(../image/head.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.back1{
+	position:absolute ;
+	left: 0.1rem;
+	top: 0.15rem;
+}
+
+.back1 img{
+	width: 0.7rem;
+	height: 0.7rem;
+}
+.chatroom{
+	margin: 0.25rem auto 0;
+	width: 1.35rem;
+	height: 0.5rem;
+	
+}
+.session{
+	width: 100%;
+	overflow: auto;
+	flex: 1;
+	-webkit-box-flex:1;
+}
+.foot{
+	width: 100%;
+	background: #0ff;
+	height: 1rem;
+	background: url(../image/head.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	 display: -webkit-flex; /* Safari */
+  		display: flex;
+  		flex-direction:row;
+  		align-items:center; 
+	
+}
+.talk{
+	border-radius:3px ;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	outline: none;
+	background:url(../image/input.png) no-repeat 0 0;
+	background-size:100% 100%;
+	border: none;
+	height: 0.8rem;
+	
+	width: 100%;
+	text-indent: 0.8rem;
+	flex:6;
+}
+.send_box{
+	
+	margin-top: 0.15rem;
+	flex: 1;
+}
+.send{	
+	width: 1.4rem;
+	height: 0.7rem;
+	
+}
+
+/*中间对话框*/
+.talkLeft{
+	float: left;
+}
+.talkImg{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-left: 0.1rem;
+	overflow: hidden;
+}
+.talkImg img{
+	width: 100%;
+	height: 100%;
+}
+.talkName{
+	line-height: 0.8rem;
+	margin-left: 0.2rem;
+}
+.talkWin {
+	margin:0 0.2rem ;
+}
+.winImg{
+	width: 0.96rem;
+	height: 0.6rem;
+}
+.time{
+	line-height: 0.8rem;
+	
+}
+.word{
+	margin-left: 0.7rem;
+	margin-top: 0.1rem;
+	line-height: 0.3rem;
+	
+}
+.talkBox{
+	font-size: 16px;
+	margin-top: 0.1rem;
+}
+/*zhongjian*/
+.box{
+	margin:1rem 0.3rem 0;
+}
+.center_left{
+    float:left;
+}
+.center_right{
+    float:right;
+    background: url(../image/dialog_rank.9.png) no-repeat 0 0;
+    background-size:100% 100% ;
+    text-align: center;
+    padding:0.2rem;
+    margin-top: 0.2rem;
+}
+.headImg{
+    width:0.6rem;
+    height:0.6rem;
+    overflow: hidden;
+    float:left;
+   
+}
+.headImg img{
+     display:block;
+     width:100%;
+     height:100%;
+ }
+.name{
+    width:100%;
+}
+.nickName{
+    line-height:0.6rem;
+    float:right;
+    margin-left:0.1rem;
+    color:#442e00;
+    font-size:0.26rem;
+}
+.img2{
+    float:left;
+}
+.img2 img{
+
+    width:0.9rem;
+    height:0.36rem;
+}
+.winBox{
+    margin:0.2rem 0;
+}
+.red{
+    font-weight:600;
+    color:red;
+    float:left;
+    line-height: 0.36rem;
+    font-size:0.24rem;
+    margin-left:0.1rem;
+}
+.green{
+    font-weight:600;
+    color:green;
+    float: left;
+    line-height: 0.36rem;
+    font-size:0.24rem;
+    margin-left:0.1rem;
+}
+.history img{
+    width:1.65rem;
+    height:0.48rem;
+    margin-top: 0.2rem;
+}
+.left_bottom{
+    margin-top:0.1rem;
+}
+/*zhongjian*/
+.win img{
+   margin:0 auto;
+    width:1.04rem;
+    height:0.64rem;
+}
+.ranking{
+    font-weight: 600;
+    text-align: center;
+    font-size:0.26rem;
+    color:#442e00;
+    margin-top:0.2rem;
+}
+.ranked img{
+    display: block;
+    width: 4.16rem;
+    height:2.88rem;
+}
+.gold{
+    position: relative;
+}
+.gold img{
+    display: block;
+   width: 4.16rem;
+    height:2.12rem;
+}
+.gold .look{
+    position:absolute;
+    top:0;
+    left:0;
+    width:1.86rem;
+    height:0.54rem;
+}
+ section{
+        -webkit-box-flex:1;overflow:hidden;
+    }

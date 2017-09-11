@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="textml; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection">
+		<title></title>
+		
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../css/reset.css">
+		<!--<link rel="stylesheet" href="../css/common.css" />-->
+
+		<!-- <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">-->
+		<link rel="stylesheet" href="../css/match.css">
+			<style>
+				.shares{
+	    text-align: center;
+	margin-top: 0.3rem;
+	font-size: 0.28rem;
+}
+
+.back{
+   float:left;
+    margin: 0.1rem 0 0 0.1rem;
+}
+.back img{
+    display: block;
+    width:0.69rem;
+    height:0.7rem;
+}
+			</style>
+	</head>
+	<body class="clear">
+		<div id="print">
+			<!--头部-->
+			<iframe src="music.html" width="0" height="0" scrolling="no"  id="iframe" type="0"></iframe>
+				<div class="head clear">
+					<div class="back" id="goback">
+						<img src="../image/back.png" />
+					</div>
+					<div class="headLeft clear">
+						<div class="headImg headImg1">
+							<img src="../image/adver.png" />
+						</div>
+						<div class="infor">
+							<div class="nickName nickName1">---</div>
+							<div>
+								<span class="percent1">0%</span>
+							</div>
+						</div>
+						<div class="win">
+							<img src="../image/level.png" alt="" class="winImg">
+						</div>
+						<div class="word">
+							平仓
+						</div>
+					</div>
+					<div class="headRight">
+						<div class="equal">
+							<img src="../image/level.png" alt="" class="winImg2">
+						</div>
+						<div class="infor">
+							<div class="nickName nickName2">---</div>
+							<div >
+								<span class="percent2">0%</span>
+							</div>
+						</div>
+						<div class="headImg headImg2">
+							<img src="../image/adver.png" />
+						</div>
+						
+					</div>
+				</div>
+				<!--中间-->
+			<div class="center" id="main3"></div>
+				<!--底部-->
+			<div class="foot clear">
+				<div class="moreBox">
+					<img src="../image/more.png" alt="" class="more" type="0">
+				</div>
+				<!--<div class="going clear">
+					<div class="kxian">
+						5.5秒一个K线
+					</div>
+					<p class="clear div" id="center">
+						<span>
+            		<img src="../image/left.png" class="left"/>
+            	</span>
+						<span>
+            		<img src="../image/stop.png" class="go"/>
+            	</span>
+						<span>
+            		<img src="../image/right.png" class="right"/>
+            	</span>
+					</p>
+
+				</div>-->
+				<div class="kongBox clear">
+					<img src="../image/kong.png" class="kong" sign="1"/>
+				</div>
+			</div>
+				<!--弹出层-->
+				<div class="mask opacity"></div>
+				<div class="popup">
+					<div class="closeBack">
+						<img src="../image/close.png" alt="">
+					</div>
+					<!--开始回放-->
+					<div class="box clear">
+						<div class="man left">
+							<p class="manImg people">
+								<img src="../image/back.png"/>
+							</p>
+							<p class="name nick">狗熊</p>
+						</div>
+						<div class="winer left">
+							<img src="../image/vs.png" class="vs"/>
+						</div>
+						<div class="woman">
+							<p class="womanImg people">
+								<img src="../image/happy.png" class="happy"/>
+							</p>
+							<p class="woname nick">
+								---
+							</p>
+						</div>
+						<div class="startword">
+								
+							</div>
+					</div>
+					<div class="replay">
+						<img src="../image/match.png" class="match" type=0/>
+					</div>
+					<!--结束回放-->
+					<div class="enjoyBox clear">
+						<div class="man left">
+							<p class="manImg people">
+								<img src="../image/back.png"/>
+							</p>
+							<p class="percent1 nick">狗熊</p>
+						</div>
+						<div class="winer left">
+							<img src="" class="vs"/>
+							<span>
+									<em><img src="../image/kline.png"/ style="display: inline-block;width: 0.24rem;height: 0.3rem;"></em>
+								<em class="jinGold"></em>
+							</span>
+						</div>
+						<div class="woman">
+							<p class="womanImg people">
+								<img src="../image/happy.png"/>
+							</p>
+							<p class="percent2 nick">
+								---
+							</p>
+						</div>
+						<div class="startword">								
+							</div>
+							<div class="shares">							
+						</div>
+					</div>					
+				</div>
+				
+				<!--做多音乐-->
+			<audio id="moreMusic" src="../music/vs_girl_buy.mp3" preload='preload'></audio>
+			<!--做空音乐-->
+			<audio id="kongMusic" src="../music/vs_girl_sell.mp3" preload='preload'></audio>
+			<!--平仓音乐-->
+			<audio id="pingMusic" src="../music/vs_girl_ping.mp3" preload='preload'></audio>
+				
+				
+		</div>
+		<!--<script src="../js/jquery.mobile-1.4.5.min.js"></script>-->
+		<script src="../js/jquery-2.2.3.min.js"></script>
+			<script src="../js/echarts.js"></script>
+			<script src="../js/common.js"></script>
+			<script src="../js/touch.min.js"></script>
+			<script src="../js/match.js"></script>
+	</body>
+</html>

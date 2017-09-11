@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="textml; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection">
+		<title></title>
+		<script src="../js/jquery-2.2.3.min.js"></script>
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../css/reset.css">
+		<!--<link rel="stylesheet" href="../css/common.css" />-->
+
+		<!-- <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">-->
+		<link rel="stylesheet" href="../css/talk.css">
+			<script src="../js/iscroll.js"></script>
+		<style>
+			#wrapper {
+				/*position: absolute;
+				z-index: 1;
+				top: 45px;
+				bottom: 48px;*/
+				/*left:-9999px;*/
+				width: 100%;
+				background:url(../image/background.png) no-repeat 0 0;
+				background-size:100% 100% ;
+				overflow: auto;
+				
+			}
+			
+			#scroller {
+				/*position: absolute;*/
+				z-index: 1;
+				/*	-webkit-touch-callout:none;*/
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+				width: 100%;
+				padding: 0;
+			}
+			
+			#scroller ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				text-align: left;
+			}
+			
+			#scroller li {
+			/*	padding: 0 10px;
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #ccc;
+				border-top: 1px solid #fff;
+				background-color: #fafafa;
+				font-size: 14px;*/
+			}
+			
+			#myFrame {
+				/*position: absolute;
+				top: 0;
+				left: 0;*/
+			}
+			/**
+ *
+ * Pull down styles
+ *
+ */
+			
+			#pullDown,
+			#pullUp {
+				
+				height: 40px;
+				line-height: 40px;
+				padding: 5px 10px;
+				
+				font-weight: bold;
+				font-size: 14px;
+				color: #888;
+			}
+			
+			#pullDown .pullDownIcon,
+			#pullUp .pullUpIcon {
+				display: block;
+				float: left;
+				width: 40px;
+				height: 40px;
+				
+				-webkit-background-size: 40px 80px;
+				background-size: 40px 80px;
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 250ms;
+			}
+			
+			#pullDown .pullDownIcon {
+				-webkit-transform: rotate(0deg) translateZ(0);
+			}
+			
+			#pullUp .pullUpIcon {
+				-webkit-transform: rotate(-180deg) translateZ(0);
+			}
+			
+			#pullDown.flip .pullDownIcon {
+				-webkit-transform: rotate(-180deg) translateZ(0);
+			}
+			
+			#pullUp.flip .pullUpIcon {
+				-webkit-transform: rotate(0deg) translateZ(0);
+			}
+			
+			#pullDown.loading .pullDownIcon,
+			#pullUp.loading .pullUpIcon {
+				background-position: 0 100%;
+				-webkit-transform: rotate(0deg) translateZ(0);
+				-webkit-transition-duration: 0ms;
+				-webkit-animation-name: loading;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+			}
+			
+			@-webkit-keyframes loading {
+				from {
+					-webkit-transform: rotate(0deg) translateZ(0);
+				}
+				to {
+					-webkit-transform: rotate(360deg) translateZ(0);
+				}
+			}
+		</style>
+	</head>
+
+	<body class=" clear">
+		<div id="print">
+				<iframe src="music.html" width="" height="" id="iframe" ></iframe>
+			<div class="head">
+				<div class="back1">
+					<img src="../image/back.png" class="backImg1" />
+				</div>
+				<img src="../image/chatroom.png" class="chatroom" />
+			</div>
+			<div class="session" id="wrapper">
+				<!--<div class="talkBox">
+					<div id="talkTop clear">
+						<div class="talkImg talkLeft">
+							<img src="../image/back.png" />
+						</div>
+						<div class="talkName talkLeft">
+							旋风
+						</div>
+						<div class="talkWin talkLeft">
+							<img src="../image/_level_1.png" / class="winImg">
+						</div>
+						<div class="time">
+							12:20
+						</div>
+					</div>
+					<div class="word">
+						聊天室聊天室
+					</div>
+				</div>
+				<div class="talkBox">
+					<div id="talkTop clear">
+						<div class="talkImg talkLeft">
+							<img src="../image/back.png" />
+						</div>
+						<div class="talkName talkLeft">
+							旋风
+						</div>
+						<div class="talkWin talkLeft">
+							<img src="../image/_level_1.png" / class="winImg">
+						</div>
+						<div class="time">
+							12:20
+						</div>
+					</div>
+					<div class="word">
+						聊天室聊天室
+					</div>
+				</div>-->
+				<!---->
+
+				
+					<div id="scroller">
+						<div id="pullDown">
+							<span class="pullDownIcon"></span><span class="pullDownLabel"></span>
+						</div>
+
+						<ul id="thelist">
+							
+						</ul>
+						<div id="pullUp">
+							<span class="pullUpIcon"></span><span class="pullUpLabel"></span>
+						</div>
+					</div>
+				
+				</section>
+			</div>
+			<div class="foot clear">
+				<input type="text" name="" id="" placeholder="请输入你要说的话" class="talk" />
+				<div class="send_box">
+					<img src="../image/send.png" class="send" />
+				</div>
+
+			</div>
+			<!--弹出层-->
+			<div class="mask opacity"></div>
+
+			<div class="popup">
+				<div class="close">
+					<img src="../image/close.png" alt="">
+				</div>
+				<div class="box clear">
+					<div class="center_left ">
+						<div class="name clear">
+							<div class="headImg">
+								<img src="../image/notice.png" alt="">
+							</div>
+							<div class="nickName">kkkk</div>
+						</div>
+						<div class="result">
+							<div class="winBox clear">
+								<span class="img2">
+								<img src="../image/ic_kline_src_win.png" alt="">
+							</span>
+								<span class="red">胜：</span>
+								<span class="winCount red">5</span>
+							</div>
+							<div class="loseBox clear">
+								<span class="img2">
+									<img src="../image/lose.png" alt="">
+								</span>
+								<span class="green">负：</span>
+								<span class="loseCount green">0</span>
+							</div>
+
+						</div>
+						<div class="history">
+							<img src="../image/history.png" alt="" class="hisImg">
+						</div>
+
+					</div>
+
+					<div class="center_right">
+						<div class="win">
+							<img src="../image/shield.png" alt="" class="winImg">
+						</div>
+						<div class="winName">菜鸟</div>
+						<div class="ranking">
+							<span>总排名：</span>
+							<span class="rankCount">123456</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<script src="../js/zepto.js"></script>
+		<script src="../js/touch.min.js"></script>-->
+
+		<script src="../js/jquery.page.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/talk.js"></script>
+	</body>
+	<script type="text/javascript">
+		
+var pageIndex = 1 , pageCount = 3; //当前的页数，每一页的数据
+var myScroll,
+	pullDownEl, pullDownOffset,
+	pullUpEl, pullUpOffset,
+	generatedCount = 0;
+
+function pullDownAction () {
+	pageIndex++;
+	console.log(pageIndex)
+	setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+		var el, li, i;
+		el = document.getElementById('thelist');
+	$.ajax({
+		type: "post",
+		url: http + "gUserInfo/getChat",
+		dataType: "json",
+		contentType: "application/json;charset=utf-8",
+		data: JSON.stringify({
+			"userNumber":userNumber,	
+			"pageSize": 4,
+			"currentPage":pageIndex
+		}),
+		success: function(data) {
+			console.log(data)
+			var result=data.result;
+		
+			var time;
+			var creatTime
+			for(var i=0;i<result.length;i++){
+				
+					time=result[i].createTime;
+				creatTime=time.substring(0,time.length-2)
+				
+				li = document.createElement('li');
+
+			li.innerHTML ='<div class="talkBox">'+
+				'<div id="talkTop clear">'+
+				'<div class="talkImg talkLeft" userId="'+result[i].userId+'">'+
+				'<img src="'+result[i].headImg+'"/>'+		
+				'</div>'+		
+				'<div class="talkName talkLeft">'+result[i].name+'</div>'+		
+				'<div class="talkWin talkLeft">'+
+				'<img src="../image/_level_1.png"/ class="winImg">'+		
+				'</div>'+		
+				'<div class="time">'+creatTime+'</div>'+
+				'</div>'+
+				'<div class="word">'+result[i].content+'</div>'+
+				'</div>';
+				el.insertBefore(li, el.childNodes[0]);									
+			}
+		}
+		})
+		
+		myScroll.refresh();		// Remember to refresh when contents are loaded (ie: on ajax completion)
+	}, 1000);	// <-- Simulate network congestion, remove setTimeout from production!
+}
+
+function pullUpAction () {
+	setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+		var el, li, i;
+		el = document.getElementById('thelist');
+		
+		
+
+		/*for (i=0; i<3; i++) {
+			li = document.createElement('li');
+			li.innerText = 'Generated row ' + (++generatedCount);
+			el.appendChild(li, el.childNodes[0]);
+		}*/
+		myScroll.refresh();		// Remember to refresh when contents are loaded (ie: on ajax completion)
+	}, 1000);	// <-- Simulate network congestion, remove setTimeout from production!
+}
+
+function loaded() {
+	pullDownEl = document.getElementById('pullDown');
+	pullDownOffset = pullDownEl.offsetHeight;
+	pullUpEl = document.getElementById('pullUp');	
+	pullUpOffset = pullUpEl.offsetHeight;
+	
+	myScroll = new iScroll('wrapper', {
+		useTransition: true,
+		topOffset: pullDownOffset,
+		onRefresh: function () {
+			if (pullDownEl.className.match('loading')) {
+				pullDownEl.className = '';
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉加载';
+			} else if (pullUpEl.className.match('loading')) {
+				pullUpEl.className = '';
+				pullUpEl.querySelector('.pullUpLabel').innerHTML = '';
+			}
+		},
+		onScrollMove: function () {
+			if (this.y > 5 && !pullDownEl.className.match('flip')) {
+				pullDownEl.className = 'flip';
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新';
+				this.minScrollY = 0;
+			} else if (this.y < 5 && pullDownEl.className.match('flip')) {
+				pullDownEl.className = '';
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新';
+				this.minScrollY = -pullDownOffset;
+			} else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
+				pullUpEl.className = 'flip';
+				pullUpEl.querySelector('.pullUpLabel').innerHTML = '';
+				this.maxScrollY = this.maxScrollY;
+			} else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
+				pullUpEl.className = '';
+				pullUpEl.querySelector('.pullUpLabel').innerHTML = '';
+				this.maxScrollY = pullUpOffset;
+			}
+		},
+		onScrollEnd: function () {
+			if (pullDownEl.className.match('flip')) {
+				pullDownEl.className = 'loading';
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Loading...';				
+				pullDownAction();	// Execute custom function (ajax call?)
+			} else if (pullUpEl.className.match('flip')) {
+				pullUpEl.className = 'loading';
+				pullUpEl.querySelector('.pullUpLabel').innerHTML = '';				
+				pullUpAction();	// Execute custom function (ajax call?)
+			}
+		}
+	});
+	
+	setTimeout(function () { document.getElementById('wrapper').style.left = '0'; }, 800);
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, true);
+
+document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+</script>
+		</html>
